@@ -1,0 +1,16 @@
+{
+  "name": "json-to-es-bulk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.1.2",
+    "lodash": "^4.12.0",
+    "yargs": "^4.7.0"
+  }
+}
