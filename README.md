@@ -28,7 +28,7 @@ to generate test data that can easily be converted to a bulk request.
 ### Creating request data for an input file:
 
 ```
-node index.js -f inputdata.json -index test -type test
+node index.js -f inputdata.json --index test --type test
 ```
 
 This will read `inputdata.json` from the current directory, and
