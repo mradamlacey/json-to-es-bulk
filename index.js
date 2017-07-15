@@ -67,6 +67,9 @@ if(!_.isArray(inputJson)){
 }
 
 var stream = fs.createWriteStream(path.join(argv.output, 'request-data.txt'));
+stream.on('finish', function() {
+	console.log(colors.green('completed, wrote: ' + counter + ' record(s)'));
+});
 
 console.log(colors.gray('Writing records...'));
 var counter = 0;
@@ -90,8 +93,3 @@ stream.once('open', function(fd) {
 
     stream.end();
 });
-
-
-
-
-console.log(colors.green('completed, wrote: ' + counter + ' record(s)'));
