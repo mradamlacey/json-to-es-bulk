@@ -50,7 +50,7 @@ var inputJsonString = fs.readFileSync(argv.file),
 try{
     inputJson = JSON.parse(inputJsonString);
 }
-catch(ex){
+catch(err){
     console.log(colors.red('Unable to parse input json contents', err));
     exit(1);
 }
